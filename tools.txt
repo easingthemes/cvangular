@@ -1,0 +1,32 @@
+node
+yoeman
+git
+github
+tortoisegit
+svn
+tortoisesvn
+wordpress
+warp
+uikit
+sass
+less
+js
+jquery
+responsive
+joomla
+sublime
+sublime plugin
+ruby
+rails
+cmd
+kubuntu
+win7
+photoshop
+illustrator
+font awesome
+iconic font
+web fonts
+google maps api
+woocommerce
+jigoshop
+ajax

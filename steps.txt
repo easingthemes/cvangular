@@ -1,0 +1,25 @@
+0. node: update nose first!!
+1. yeoman, bower, grunt: 
+npm install -g yo grunt-cli bower
+npm install -g yo
+npm install -g grunt-cli
+npm install -g bower
+
+//error: 
+npm uninstall -g generator-karma && npm install -g generator-angular
+npm uninstall -g  generator-angular
+npm uninstall -g  generator-generator
+npm uninstall -g  generator-karma
+npm uninstall -g  generator-keystone
+npm uninstall -g  generator-mocha
+npm uninstall -g  generator-webapp
+npm uninstall -g  generator-yeomagento
+2. angular: 
+npm install -g generator-angular
+
+3. yo angular
+
+4. bower install angular-bootstrap --save
+
+grunt serve
+grunt test

@@ -80,6 +80,14 @@ git remote -v
 * git push upstream master
 * git pull upstream master
 
+#SSH GitHub
+#copy locall key content
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+#Add ssh key to GitHub and paste this content
+ssh -T git@github.com
+
+git remote set-url upstream git@github.com:easingthemes/cvangular.git
 -------------------------------------------
 Dreamhost
 ___________________________________________

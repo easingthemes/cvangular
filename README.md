@@ -63,6 +63,14 @@ sudo npm install phantomjs
 
 grunt test //ok
 
+// DEVELOPE ...... FINISH, BUILD
+grunt build
+//resolve errors
+sudo npm install grunt-ngmin --save-dev
+
+grunt build
+//Now we got dist folder for our app
+
 -------------------------------------------
 GitHub
 ___________________________________________
@@ -99,6 +107,9 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@frontenddot.com
 ssh user@frontenddot.com
 
 #remote
+#Create subdomain for app and point it to 'dist' folder
+#cvangular-dev.frontenddot.com --> cvangular-dev.frontenddot.com/dist
+
 #put all 'gits' in git folder
 cd git 
 mkdir cvangular-dev.git && cd cvangular-dev.git

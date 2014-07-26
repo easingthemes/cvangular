@@ -61,6 +61,8 @@ npm install karma-jasmine --save-dev
 sudo npm install -g phantomjs
 sudo npm install phantomjs
 
+npm install --save-dev karma-chrome-launcher karma-firefox-launcher karma-safari-launcher karma-opera-launcher karma-ie-launcher karma-jasmine karma-coffee-preprocessor
+
 grunt test //ok
 
 // DEVELOPE ...... FINISH, BUILD

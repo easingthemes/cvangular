@@ -76,5 +76,6 @@ git remote -v
 
 * git add .
 * git commit -m "commit message"
+** git commit -a
 * git push upstream master
 * git pull upstream master

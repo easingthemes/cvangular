@@ -1,4 +1,0 @@
-cvangular
-=========
-
-yo angular

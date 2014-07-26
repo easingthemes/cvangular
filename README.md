@@ -64,7 +64,7 @@ sudo npm install phantomjs
 grunt test //ok
 
 -------------------------------------------
-Git
+GitHub
 ___________________________________________
 
 git config --global user.name "Your Name"
@@ -79,3 +79,33 @@ git remote -v
 ** git commit -a
 * git push upstream master
 * git pull upstream master
+
+-------------------------------------------
+Dreamhost
+___________________________________________
+
+#locally
+ssh-keygen -t rsa
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@frontenddot.com
+
+ssh user@frontenddot.com
+
+#remote
+#put all 'gits' in git folder
+cd git 
+mkdir cvangular-dev.git && cd cvangular-dev.git
+git init --bare
+
+#create hooks file ()
+vi hooks/post-receive
+# Enter the code in this file and save + exit:
+--start of file
+#!/bin/sh
+git --work-tree=/home/user/cvangular-dev.frontenddot.com --git-dir=/home/user/git/cvangular-dev.git checkout -f
+---end of file
+chmod +x hooks/post-receive
+exit
+
+#locally
+git remote add dev ssh://user@frontenddot.com/~/git/cvangular-dev.git
+git push dev master

@@ -45,7 +45,7 @@ sudo npm install grunt-ng-annotate
 
 // Run npm and bower again if you got errors
 
-sudo npm install
+sudo npm install // sudo if you got permission errors
 bower install //no sudo here
 
 -------------------------------------------

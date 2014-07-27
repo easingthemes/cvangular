@@ -17,6 +17,8 @@ sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
+#set path
+export NODE_PATH=$HOME/.node/lib/node_modules/
 
 --node modules - globall
 sudo npm install -g yo
@@ -100,6 +102,7 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 
 git remote set-url upstream git@github.com:easingthemes/cvangular.git
+
 -------------------------------------------
 Dreamhost
 ___________________________________________
@@ -120,13 +123,14 @@ mkdir cvangular-dev.git && cd cvangular-dev.git
 git init --bare
 
 #create hooks file ()
-vi hooks/post-receive
-# Enter the code in this file and save + exit:
---start of file
+#create file for writing
+cat > ~/git/cvangular-dev.git/hooks/post-receive
+#paste content:
 #!/bin/sh
-git --work-tree=/home/user/cvangular-dev.frontenddot.com --git-dir=/home/user/git/cvangular-dev.git checkout -f
----end of file
-chmod +x hooks/post-receive
+git --work-tree=/home/drafil/cvangular-dev.frontenddot.com --git-dir=/home/drafil/git/cvangular-dev.git checkout -f
+#press control-d to save the file
+#'activate hook':
+chmod +x ~/git/cvangular-dev.git/hooks/post-receive
 exit
 
 #locally

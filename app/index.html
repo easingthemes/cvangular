@@ -35,8 +35,17 @@
     <link rel="stylesheet" href="styles/components/components.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <style>
+      .auto-gen-code-snippet {
+        display: none;
+      }
+      .auto-gen-code-visible {
+        display: block;
+      }
+    </style>
   </head>
-  <body ng-app="cvangularApp">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700'>
+  <body ng-app="cvangularApp" class="page--styleguide">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -66,11 +75,7 @@
     <footer class="footer">
       <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team.</p>
     </footer>
-
-
-
-
-
+    
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -91,12 +96,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
         
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>

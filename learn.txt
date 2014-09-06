@@ -146,3 +146,13 @@ app.directive("productTabs", function() {
   },
   "appPath": "app"
 }
+git
+[remote "origin"]
+    url = https://github.com/easingthemes/cvangular.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[remote "dreamhost"]
+    url = ssh://drafil@frontenddot.com/~/git/cvangular-dev.git
+    fetch = +refs/heads/*:refs/remotes/dreamhost/*

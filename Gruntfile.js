@@ -383,6 +383,20 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+    // Beautify min css
+    cssbeautifier : {
+        files : ['<%= yeoman.app %>/styles/zip.css'],
+        options : {
+            indent: '   ',
+            openbrace: 'end-of-line',
+            autosemicolon: false
+        }
+    },
+    "jsbeautifier" : {
+        files : ["<%= yeoman.app %>/scripts/zip.js"],
+        options : {
+        }
     }
   });
 
@@ -436,5 +450,12 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('beautifycss', [
+    'cssbeautifier'
+  ]);
+  grunt.registerTask('beautifyjs', [
+    'jsbeautifier'
   ]);
 };
